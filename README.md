@@ -33,4 +33,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Contact Developers
 
-To contact the CodeOne Developers, please mail to [Sivasankar Sivalingam](https://facebook.com/sivasankar.mahesh)
+To contact the CodeOne Developers, please add me on [Sivasankar Sivalingam](https://facebook.com/sivasankar.mahesh)
