@@ -1,10 +1,14 @@
-# EdurekaCertification
+# CodeOne Developers
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
+## Development Angular App
+
+Run `npm start` for a DT application. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run dev` for a DT server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
