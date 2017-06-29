@@ -1,0 +1,22 @@
+.trackerTable {
+    padding-top: 5em;
+}
+
+.trackerTitle {
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.smTableBorder {
+    border: 2px solid #222222;
+    margin: 25px 0 25px 0;
+}
+
+.table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.monthList {
+    margin-left: 2em;
+}

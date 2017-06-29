@@ -1,0 +1,57 @@
+<div id="form_container" class="container-fluid">
+    <div class="form_description">
+        <h2>Login</h2>
+        <p>Please enter your user id and password to login.</p>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12	col-sm-12	col-md-6	col-lg-6	col-xl-3">
+            <form class="appnitro" method="post" action="">
+                <div class="form-group">
+                    <label class="description" for="element_3">User Name </label>
+                    <div>
+                        <input type="text" placeholder="Enter your Username" [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" required minlength="5" maxlength="24" #username="ngModel" class="element text medium form-control" />
+
+                        <div *ngIf="username.errors && (username.dirty || username.touched)" class="right error">
+                            <span [hidden]="!username.errors.required">
+                                    Please enter a Username.
+                                </span>
+                            <span [hidden]="!username.errors.minlength">
+                                    Username must be at least 5 characters long.
+                                </span>
+                            <span [hidden]="!username.errors.maxlength">
+                                    Username cannot be more than 24 characters long.
+                                </span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="description" for="element_4">Password </label>
+                    <div>
+                        <input class="element text medium form-control" type="password" placeholder="Enter your Password" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" required minlength="5" maxlength="12" #password="ngModel" />
+
+                        <div *ngIf="password.errors && (password.dirty || password.touched)" class="right error">
+                            <span [hidden]="!password.errors.required">
+                                    Please enter a Password.
+                                </span>
+                            <span [hidden]="!password.errors.minlength">
+                                    Password must be at least 5 characters long.
+                                </span>
+                            <span [hidden]="!password.errors.maxlength">
+                                    Password cannot be more than 12 characters long.
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <input class="button_text btn btn-primary" type="submit" value="Login" (click)="DoLogin(user)" [disabled]=" username.errors || password.errors " />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
