@@ -1,0 +1,25 @@
+header nav.navbar {
+    background: #0e283e;
+    background: -webkit-linear-gradient(#0e283e, #123a5d);
+    background: -o-linear-gradient(#0e283e, #123a5d);
+    background: -moz-linear-gradient(#0e283e, #123a5d);
+    background: linear-gradient(#0e283e, #123a5d);
+    border-bottom: 1px solid #ffffff;
+}
+
+.logoImg {
+    width: 8em;
+    margin: 0.25em;
+}
+
+.navAlignR {
+    margin-right: 5em;
+}
+
+.menuWidth {
+    width: 1em;
+}
+
+.headerTitle {
+    color: white;
+}
