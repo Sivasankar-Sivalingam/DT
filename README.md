@@ -6,13 +6,22 @@ Project DT has been build on MEAN architecture. Where the Database is run throug
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
-## DT Application Dependecies
+## Steps to run Project DT 
 
-To run this app, we also need the dependent server app to run. The [DT-Server](https://github.com/Sivasankar-Sivalingam/DT-Server).
+1. GitClone or Download the [Project DT](https://github.com/Sivasankar-Sivalingam/DT).
 
-## Development Angular App
+2. To start with an angular application, we are going to need node.js. So the first step is to install node.js. We can get that installed from the below website: https://nodejs.org/en/
 
-Run `npm start` for a DT application. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. After installing NodeJs, Open the node.js command prompt.
+
+4. Get into the project folder. i.e, run the cmd `cd  project_folder_path`.
+
+5. Now install all the dependecies and devDependencies for the project by running the cmd `npm install`, this will intrun create a folder `node_modules` in the project structure and it will contain all the dependent files.
+
+6. Now the Project DT - Angular app is ready to run. But still we need to run the server and DB to get the app run functionaly. So now we need to refer to the server app: [DT-Server](https://github.com/Sivasankar-Sivalingam/DT-Server) and follow the instructions to get it up and running. 
+
+7. Run the cmd `npm start` form the Project DT. Navigate to `http://localhost:4200/`. The Project DT app will up and runnning in that URL and it will be automatically reloaded if you change is done in any of the source files.
+
 
 ## Development server
 
