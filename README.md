@@ -1,6 +1,14 @@
-# CodeOne Developers
+# Project DT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
+Project DT is an angular application build to maintain and hold entries for DT.
+
+Project DT has been build on MEAN architecture. Where the Database is run through [MongoDb](https://www.mongodb.com), Middleware and Server is run through  [NodeJs](https://nodejs.org/en) and  [ExpressJs](https://expressjs.com), while the frontend and business manipulation is done through  [Angular](https://angular.io).
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+
+## DT Application Dependecies
+
+To run this app, we also need the dependent server app to run. The [DT-Server](https://github.com/Sivasankar-Sivalingam/DT-Server).
 
 ## Development Angular App
 
