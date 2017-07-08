@@ -6,6 +6,7 @@
     <hr>
     <div class="row">
         <div class="col-12	col-sm-12	col-md-6	col-lg-6	col-xl-3">
+            <span class="loginError" [ngClass]="(validUser)?'displayNone':'displayBlock'">Incorrect Username or Password!</span>
             <form class="appnitro" method="post" action="">
                 <div class="form-group">
                     <label class="description" for="element_3">User Name </label>
@@ -49,7 +50,7 @@
                 </div>
 
                 <div class="buttons">
-                    <input class="button_text btn btn-primary" type="submit" value="Login" (click)="DoLogin(user)" [disabled]=" username.errors || password.errors " />
+                    <input class="button_text btn btn-primary" type="button" value="Login" (click)="loginUser(user)" [disabled]=" username.errors || password.errors " />
                 </div>
             </form>
         </div>

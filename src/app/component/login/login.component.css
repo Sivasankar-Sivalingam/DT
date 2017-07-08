@@ -11,3 +11,17 @@
     table-layout: fixed;
     word-wrap: break-word;
 }
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.loginError {
+    color: red;
+    padding: 1rem;
+    border: 1px solid lightcoral;
+}
