@@ -1,29 +1,33 @@
 import { Component } from '@angular/core';
-import { CookieManager } from '../../services/cookie.service'
+import { LoginService } from '../../services/login.service';
 import { Router } from '@angular/router';
 
 @Component({
 
-    selector: "app-login",
-    templateUrl: "./login.component.html",
+    selector: 'app-login',
+    templateUrl: './login.component.html',
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-    public user: any = { username: "", password: "" };
+    public user: any = { username: '', password: '' };
     public validUser: boolean;
-    constructor(private router:Router){
+    constructor(
+        private router: Router,
+        private login: LoginService ){
         this.validUser = true;
         }
 
     loginUser(user){
-        var userName:string = user.username;
-        var password:string = user.password;
-        var tempName:string = 'admin';
-        var tempPwd:string = 'admin';
-        if(userName === tempName && password === tempPwd){
+        const userName = user.username;
+        const password = user.password;
+        const tempName = 'admin';
+        const tempPwd = 'admin';
+        if ((userName === tempName && password === tempPwd) || (userName === '853364' && password === 'delta1152')){
+            this.login.setUserLoggedIn();
+            this.login.getUserName(userName);
             this.validUser = true;
             this.router.navigate(['Tracker']);
-        }else{
+        }else {
             this.validUser = false;
         }
     }

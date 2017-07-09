@@ -4,15 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-// Cookie Service
-import { CookieService } from 'angular2-cookie/services'
 
 
-//infra
+// infra
 import { AppComponent } from './app.component';
 import { routing } from './routes/app.routes';
-import { CookieManager } from './services/cookie.service';
+import { LoginService } from './services/login.service';
 import { TrackerService } from './services/tracker.service';
+
+// login-auth
+import { LoginAuthGuard } from './login-auth.guard';
 
 // PageNotFound and header and footer components
 import { PageNotFoundComponent} from './component/pageNotFound/pageNotFound.component';
@@ -24,7 +25,7 @@ import { LoginComponent } from './component/login/login.component';
 import { TrackerComponent } from './component/tracker/tracker.component';
 
 
-//tracker dates
+// tracker dates
 import { JanComponent } from './component/tracker/jan/jan.component'
 import { FebComponent } from './component/tracker/feb/feb.component'
 import { MarComponent } from './component/tracker/mar/mar.component'
@@ -56,7 +57,7 @@ import { BooleanConversionPipe } from './pipes/booleanConversion.pipe';
     RouterModule,
     routing
   ],
-  providers: [TrackerService, CookieService, CookieManager],
+  providers: [TrackerService, LoginService, LoginAuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -4,16 +4,14 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-import { Router } from '@angular/router'
-import { Tracker }   from './tracker';
+import { Router } from '@angular/router';
+import { Tracker } from './tracker';
 
 
 @Injectable()
 export class TrackerService {
-    constructor(private http: Http, private _router: Router) {}
-    
     private trackerUrl = 'http://localhost:3000/deploymenttracks';
- 
+    constructor(private http: Http, private _router: Router) {}
     /*getTracker() : Observable<Tracker[]> {
 
          // ...using get request

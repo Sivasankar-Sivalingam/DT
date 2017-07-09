@@ -22,6 +22,8 @@
 
 .loginError {
     color: red;
-    padding: 1rem;
-    border: 1px solid lightcoral;
+    padding: 0.5rem;
+    border: 1px solid red;
+    margin-bottom: 1rem;
+    background-color: lightyellow;
 }
